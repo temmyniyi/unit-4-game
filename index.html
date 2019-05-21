@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit-4-Game</title>
+<!--Boostrap cdn-->
+ <!--Bootstrap CSS library-->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--styles-->
+<link rel="stylesheet" type="text.css" href="../Assets/reset.css">
+<link rel="stylesheet" type="text/css" href="./Assets/style.css">
+ <!--scripts-->
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Heading of the Crystal Collector Game-->
+    <script type="text/javascript" src="./Assets/game.js"></script>
+    <div class="container">
+    <div class="jumbotron jumbotron-fluid col-md-12">
+        <div class="container">
+              <h1 class="display-4 text-center">Crystal Collector!</h1>
+        </div>
+    </div>
+    <!--Crystal Collector Game Instructions-->
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron jumbotron-fluid">
+                            <div class="container col-md-12">
+                                  <h3 class="display-4 text-center">Instructions</h3>
+                                  <h6 class="justify">
+                    You will be given a random number at the begining of this game.<br />There are four crystals below. By clicking on a crystal, you will add a specific number of points to your total score.<br />
+        You win by matching your total score to the random number; you lose the game if your score exceeds the random number.<br />
+        Each crystal's value remains hidden until you click it.<br />Each crystal's value changes each time the game starts.<br /></h6>
+                            </div>
+                        </div>
+                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+        <!---->  
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container col-md-6">
+                        <div class="random-number" id="randNum"></div>
+                        </div>
+                </div>
+            </div>
+    <!--Wins and Losses-->   
+                <div class="col-md-6">
+                    <div class="jumbotron jumbotron-fluid">
+                                <div class="wins-loses">
+                                    <p><h2>Wins:</h2></p> <p id="wins"><h2>0</h2></p>
+                                   <p><h2>Losses:</h2><p id="losses"><h2>0</h2></p></p>
+                                </div>
+                            </div>
+                    </div>
+                 
+            </div> 
+        <!---->
+       <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                    <div class="crystal-array" id="crysArray">
+                            <button id="amethyst" class="jewel amethyst"><img src="#" alt=""></button>
+                            <button id="emld" class="jewel emld"><img src="#" alt=""></button>
+                            <button id="ruby" class="jewel ruby"><img src="#" alt=""></button>
+                            <button id="sapphire" class="jewel sapphire"><img src="#" alt=""></button>
+                        </div>
+            </div>
+        </div>
+    <!--Score-->
+    <div class="jumbotron jumbotron-fluid col-md-12">
+            <div class="container">
+                <div class="row"><div class="total-score">
+                        <div>Your total score is:</div>
+                        <br />
+                        <div id="totScore">0</div>
+                    </div></div>
+                    
+            </div>
+        </div>
+   
+    
+    
+
+    <footer class="footer">&copy; 2019 Temi Olaoluniyi</footer>
+
+
+
+</body>
+</html>
